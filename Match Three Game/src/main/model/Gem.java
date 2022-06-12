@@ -11,8 +11,6 @@ public class Gem {
     public static final int GOLD = 7;      // Brown Rectangle
 
     private int type;
-    // (I'm assuming that types are the only things that differentiate gems, and that to copy a type is to copy a gem)
-    // (may have to change many methods if I include subclasses of gems)
 
     // REQUIRES: type must be one of the constant values listed above.
     // EFFECTS: constructs a new gem with a type given by the param
