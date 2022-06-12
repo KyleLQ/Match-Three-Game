@@ -74,16 +74,4 @@ public class JsonReader {
             row[col] = new Gem(gemType);
         }
     }
-
-    /*
-    json array from "board"
-    for each object in jsonarray:
-    cast it to JsonArray
-    send it to an addRow method
-
-    addRow method
-    for each object in JSonArray of row:
-    get int associated with it, send it to gem. Add gem to the row of hte board.
-     */
-
 }
