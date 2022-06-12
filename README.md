@@ -1,0 +1,493 @@
+# Match 3 Game
+
+## Description of Project:
+
+The project I will make is a match 3 game. It will let players swap around adjacent gems in order to get at least 
+3 of the same type of gem in a row. If they do this successfully, then players will earn points. New gems will drop
+down if the player successfully matches 3, and the goal of the game is to keep matching 3 gems until it is impossible
+to do so.
+
+**Hardcore gamers**, like *Candy Crush Saga* **gamers**, will be sure to find hours of entertainment from my game. 
+This project is of interest to me because I like playing games.
+
+
+## User Stories:
+
+- As a user, I want to be able to generate random boards to play on
+- As a user, I want to be able to swap two adjacent gem's positions. If this causes a match of 3 or more, then
+  the gems will disappear and gems from above will fall into the empty tiles. **New gems will also 
+  be *added* to the board if this happens.**
+- As a user, I want to be able to earn points from matching 3 or more gems, and to view my points earned.
+- As a user, I want to be able to exchange points for special abilities, like clearing all gems in a row.
+- As a user, while in the middle of playing, I want to be able to save my board and points.
+- As a user, when starting the game, I want to be able to load my board and points from a file.
+- As a user, I want to be able to add gems to make my own custom board
+
+## Phase 4 Task 2:
+
+(The user creates a random board, then makes some swaps, then clears a row)
+
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 0, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 2, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 4, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 5, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 6, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 0, col: 7, added gem of type: 3
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 0, added gem of type: 3
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 1, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 2, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 3, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 4, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 5, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 6, added gem of type: 3
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 1, col: 7, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 0, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 1, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 2, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 4, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 5, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 6, added gem of type: 3
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 2, col: 7, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 0, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 1, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 2, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 3, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 5, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 6, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 3, col: 7, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 0, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 1, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 2, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 3, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 4, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 5, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 6, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 4, col: 7, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 0, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 2, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 3, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 4, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 5, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 6, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 5, col: 7, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 0, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 1, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 2, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 3, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 5, added gem of type: 3
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 6, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 6, col: 7, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 0, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 1, added gem of type: 5
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 2, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 3, added gem of type: 6
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 4, added gem of type: 2
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 5, added gem of type: 4
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 6, added gem of type: 7
+- Fri Nov 19 21:30:19 PST 2021
+- at row: 7, col: 7, added gem of type: 1
+- Fri Nov 19 21:30:19 PST 2021
+- **Finished new board w/ random gems, rows and cols: 8**
+- Fri Nov 19 21:30:28 PST 2021
+- **Created new board based on a given grid of gems**
+- Fri Nov 19 21:30:28 PST 2021
+- at row: 1, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:28 PST 2021
+- at row: 1, col: 3, added gem of type: 2
+- Fri Nov 19 21:30:28 PST 2021
+- **Finished swapping gems**
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 1, col: 1, Removed gem
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 1, col: 2, Removed gem
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 1, col: 3, Removed gem
+- Fri Nov 19 21:30:29 PST 2021
+- **Finished removing gems that were part of matches of three or more**
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 0, col: 1, Removed gem
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 1, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 0, col: 2, Removed gem
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 1, col: 2, added gem of type: 7
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 0, col: 3, Removed gem
+- Fri Nov 19 21:30:29 PST 2021
+- at row: 1, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:29 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:29 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:30 PST 2021
+- at row: 0, col: 1, added gem of type: 5
+- Fri Nov 19 21:30:30 PST 2021
+- at row: 0, col: 2, added gem of type: 1
+- Fri Nov 19 21:30:30 PST 2021
+- at row: 0, col: 3, added gem of type: 2
+- Fri Nov 19 21:30:30 PST 2021
+- **Finished adding new random gems**
+- Fri Nov 19 21:30:43 PST 2021
+- **Created new board based on a given grid of gems**
+- Fri Nov 19 21:30:43 PST 2021
+- at row: 0, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:43 PST 2021
+- at row: 1, col: 1, added gem of type: 5
+- Fri Nov 19 21:30:43 PST 2021
+- **Finished swapping gems**
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 1, col: 1, Removed gem
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 2, col: 1, Removed gem
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 3, col: 1, Removed gem
+- Fri Nov 19 21:30:44 PST 2021
+- **Finished removing gems that were part of matches of three or more**
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 0, col: 1, Removed gem
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 1, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 1, col: 1, Removed gem
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 2, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 2, col: 1, Removed gem
+- Fri Nov 19 21:30:44 PST 2021
+- at row: 3, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:44 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:44 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:45 PST 2021
+- at row: 0, col: 1, added gem of type: 7
+- Fri Nov 19 21:30:45 PST 2021
+- at row: 1, col: 1, added gem of type: 5
+- Fri Nov 19 21:30:45 PST 2021
+- at row: 2, col: 1, added gem of type: 3
+- Fri Nov 19 21:30:45 PST 2021
+- **Finished adding new random gems**
+- Fri Nov 19 21:30:54 PST 2021
+- **Created new board based on a given grid of gems**
+- Fri Nov 19 21:30:54 PST 2021
+- at row: 2, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:54 PST 2021
+- at row: 3, col: 4, added gem of type: 7
+- Fri Nov 19 21:30:54 PST 2021
+- **Finished swapping gems**
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 3, col: 3, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 3, col: 4, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 3, col: 5, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- **Finished removing gems that were part of matches of three or more**
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 2, col: 3, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 3, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 2, col: 4, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 3, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 2, col: 5, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 3, col: 5, added gem of type: 6
+- Fri Nov 19 21:30:56 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 1, col: 3, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 2, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 1, col: 4, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 2, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 1, col: 5, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 2, col: 5, added gem of type: 1
+- Fri Nov 19 21:30:56 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 0, col: 3, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 1, col: 3, added gem of type: 2
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 0, col: 4, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 1, col: 4, added gem of type: 4
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 0, col: 5, Removed gem
+- Fri Nov 19 21:30:56 PST 2021
+- at row: 1, col: 5, added gem of type: 2
+- Fri Nov 19 21:30:56 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:56 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:57 PST 2021
+- at row: 0, col: 3, added gem of type: 4
+- Fri Nov 19 21:30:57 PST 2021
+- at row: 0, col: 4, added gem of type: 4
+- Fri Nov 19 21:30:57 PST 2021
+- at row: 0, col: 5, added gem of type: 6
+- Fri Nov 19 21:30:57 PST 2021
+- **Finished adding new random gems**
+- Fri Nov 19 21:30:57 PST 2021
+- at row: 2, col: 5, Removed gem
+- Fri Nov 19 21:30:57 PST 2021
+- at row: 3, col: 4, Removed gem
+- Fri Nov 19 21:30:57 PST 2021
+- at row: 4, col: 3, Removed gem
+- Fri Nov 19 21:30:57 PST 2021
+- **Finished removing gems that were part of matches of three or more**
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 1, col: 5, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 2, col: 5, added gem of type: 2
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 2, col: 4, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 3, col: 4, added gem of type: 1
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 3, col: 3, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 4, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:58 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 0, col: 5, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 1, col: 5, added gem of type: 6
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 1, col: 4, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 2, col: 4, added gem of type: 4
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 2, col: 3, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 3, col: 3, added gem of type: 5
+- Fri Nov 19 21:30:58 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 0, col: 4, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 1, col: 4, added gem of type: 4
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 1, col: 3, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 2, col: 3, added gem of type: 2
+- Fri Nov 19 21:30:58 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 0, col: 3, Removed gem
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 1, col: 3, added gem of type: 4
+- Fri Nov 19 21:30:58 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:58 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 0, col: 3, added gem of type: 1
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 0, col: 4, added gem of type: 6
+- Fri Nov 19 21:30:58 PST 2021
+- at row: 0, col: 5, added gem of type: 3
+- Fri Nov 19 21:30:58 PST 2021
+- **Finished adding new random gems**
+- Fri Nov 19 21:31:03 PST 2021
+- **Created new board based on a given grid of gems**
+- Fri Nov 19 21:31:03 PST 2021
+- at row: 0, col: 5, added gem of type: 7
+- Fri Nov 19 21:31:03 PST 2021
+- at row: 0, col: 6, added gem of type: 3
+- Fri Nov 19 21:31:03 PST 2021
+- **Finished swapping gems**
+- Fri Nov 19 21:31:05 PST 2021
+- at row: 0, col: 6, Removed gem
+- Fri Nov 19 21:31:05 PST 2021
+- at row: 1, col: 6, Removed gem
+- Fri Nov 19 21:31:05 PST 2021
+- at row: 2, col: 6, Removed gem
+- Fri Nov 19 21:31:05 PST 2021
+- **Finished removing gems that were part of matches of three or more**
+- Fri Nov 19 21:31:05 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:31:06 PST 2021
+- at row: 0, col: 6, added gem of type: 6
+- Fri Nov 19 21:31:06 PST 2021
+- at row: 1, col: 6, added gem of type: 4
+- Fri Nov 19 21:31:06 PST 2021
+- at row: 2, col: 6, added gem of type: 5
+- Fri Nov 19 21:31:06 PST 2021
+- **Finished adding new random gems**
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 0, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 1, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 2, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 3, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 4, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 5, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 6, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 7, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- **Cleared row 1 of all gems**
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 0, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 0, added gem of type: 4
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 1, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 1, added gem of type: 7
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 2, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 2, added gem of type: 1
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 3, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 3, added gem of type: 1
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 4, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 4, added gem of type: 6
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 5, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 5, added gem of type: 7
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 6, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 6, added gem of type: 6
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 0, col: 7, Removed gem
+- Fri Nov 19 21:31:09 PST 2021
+- at row: 1, col: 7, added gem of type: 3
+- Fri Nov 19 21:31:09 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:31:09 PST 2021
+- **All gems that are able to, have fallen down one space**
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 0, added gem of type: 7
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 1, added gem of type: 3
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 2, added gem of type: 3
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 3, added gem of type: 7
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 4, added gem of type: 4
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 5, added gem of type: 1
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 6, added gem of type: 5
+- Fri Nov 19 21:31:10 PST 2021
+- at row: 0, col: 7, added gem of type: 5
+- Fri Nov 19 21:31:10 PST 2021
+- **Finished adding new random gems**
+
+
+## Phase 4 Task 3:
+- Remove the association from GameFrame to JsonWriter, and make it a dependency instead, since JsonWriter is
+only used in one method. (So make JsonWriter a local variable instead)
+- Make an abstract superclass for my mouse listener classes, since they all share similar code to identify the 
+row and col clicked, and then constrain that row and col. So I would move this similar code to the superclass.
+- Although I did make my methods robust by just checking the input with if conditions, I should try to include my own
+exception classes and throw those instead, as then I could handle exceptions using try catch finally, which seem more
+powerful than just using if conditions.
+- There is some duplication in the Board class, which I could refactor out into one method. For example, the
+makeGemsFallDown and swapGems method both swap gems and share similar code at some places, so I could refactor that 
+similar code out.
+- the player removeRow method seems like it should belong in Board instead, since its main function is to modify the
+grid of a given board.
+- I may want to try to reduce the multiplicity of the association from GameFrame to Board to just 1. The second board
+is only used for the swapping gem function/button handler, and is not really needed elsewhere. I could make the second 
+board a local variable instead of a field.
+- I may be able to use the observer pattern, where the Board is the observer and the various listeners and handlers
+are the observables/subjects. This may be able to reduce the number of classes that have associations to Board, as they
+will simply have a list of Observers instead. However, one difficulty with this is that Board does different things
+depending on the buttons. So this could end up with one update method being responsible for a ridiculous number of
+things.
+
+
+
