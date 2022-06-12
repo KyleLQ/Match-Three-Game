@@ -5,10 +5,6 @@ import org.json.JSONArray;
 import java.util.ArrayList;
 import java.util.List;
 
-// todo:
-// duplication in board maybe, and also in test methods? - i.e. first constructor and add new random gems-
-//          only difference is the boolean
-
 
 // represents the board in a match three game, contains a grid of gems
 public class Board {
